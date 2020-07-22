@@ -1,0 +1,69 @@
+title = "TOML Example"
+
+[owner]
+name = "Tom Preston-Werner"
+date = 2010-04-23
+date1 = 1979-05-27T07:32:00Z 				# UTC time, following RFC 3339/ISO 8601 spec
+date2 = 1979-05-27T15:32:00+08:00 			# with RFC 3339/ISO 8601 offset
+date3 = 1979-05-27T07:32:00					# without offset
+date4 = 1979-05-27 							# without offset or time
+time = 21:30:00
+"time." = 21:30:00:9999
+trueBool = true
+falseBool = false
+teste_ = underscore
+
+[database]
+server = "192.168.1.1"
+ports = [ 8001, 8001, 8002 ]
+connection_max = 5000
+enabled = true
+
+[servers]
+[servers.alpha]
+	ip = "10.0.0.1"
+	dc = "eqdc10"
+
+[servers . beta]
+	ip = "10.0.0.2"
+	dc = "eqdc10"
+[servers.beta.lvl3.lvl4]
+	lvl3Accepted = true
+
+# Line breaks are OK when inside arrays
+hosts = [
+	"alpha",
+	"omega"
+]
+
+"" = emptyKey
+'n' = singlequotekey
+"empty List" = [ ]
+
+array4 = [ [ 1.2, 2.4 ], [3,6] ]
+
+multilineStr = """ multi 
+line
+string
+"""
+
+multilineStr2 = ''' multi 
+line
+string
+'''
+
+multilineStr3 = '"' multi 
+line
+string
+"'"
+
+integer = 10
+intNeg = -10
+intWith_ = 100_000_000
+float = 10.2
+floatExp = 10e-3
+zero = 0
+
+key = end
+[ serversnew ]
+asdas = "adas"
