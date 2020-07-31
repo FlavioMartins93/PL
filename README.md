@@ -4,4 +4,4 @@ Trabalhos práticos da UC Processamento de Linguagens
 
 Nota Tp1: 14
 
-Nota Tp2: 17(?)
+Nota Tp2: 18
